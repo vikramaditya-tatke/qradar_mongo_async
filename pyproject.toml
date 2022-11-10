@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "shq-qradar-mongo-async-connector"
+version = "0.1.0"
+description = "Streaming API Layer between QRadar and MongoDB"
+authors = ["Vikramaditya Tatke"]
+license = "MIT License"
+readme = "README.md"
+packages = [{include = "shq_qradar_mongo_async_connector"}]
+
+[tool.poetry.dependencies]
+python = "3.11"
+pymongo = "^4.3.2"
+asyncio = "^3.4.3"
+python-dotenv = "^0.21.0"
+cryptography = "^38.0.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
